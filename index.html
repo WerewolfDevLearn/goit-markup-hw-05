@@ -12,37 +12,112 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="contact-info">
-        <a href=""class="phone-number">123-123456789</a>
-        <a href="" class="mail">info@ltntcom</a>
-      </div>
-      <ul>
-        <li>My Account</li>
-        <li>Wishlist</li>
-        <li>Cart</li>
-        <li>Checkout</li>
-        <li>Login/Register</li>
-      </ul>
-    
-      <nav class="container flex nav">
-        <a href="#" class="logo"><span>M</span>art</a>
-        <ul class="site-nav">
-          <li><a href="#" class="link">Home</a></li>
-          <li><a href="#" class="link">About us</a></li>
-          <li><a href="#" class="link">Page</a></li>
-          <li><a href="#" class="link">Shop</a></li>
-          <li><a href="#" class="link">Blog</a></li>
-          <li><a href="#" class="link">Contact us</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="container">
-        <section class="products">
-          <h2 class="section-heading container">Featured products</h2>
+    <div class="container" >
+      <header>
+        <nav>
+          <div class="user-nav">
+            <ul class="contacts flex">
+              <li>
+                <a href="tel:+123-123456789" class="phone-number link">123-123456789</a>
+              </li>
+              <li><a href="mailto:info@ltnt.com" class="mail link">info@ltnt.com</a></li>
+            </ul>
+            <ul class="user flex">
+              <li><a href="" class="link">My Account</a></li>
+              <li><a href="" class="link">Wishlist</a></li>
+              <li><a href="" class="link">Cart</a></li>
+              <li><a href="" class="link">Checkout</a></li>
+              <li><a href="" class="link">Login/Register</a></li>
+            </ul>
+          </div>
+          <div class="site-nav">
+            <a href="#" class="logo"><span>M</span>art</a>
+            <ul class="flex site ">
+              <li><a href="#" class="link">Home</a></li>
+              <li><a href="#" class="link">About us</a></li>
+              <li><a href="#" class="link">Page</a></li>
+              <li><a href="#" class="link">Shop</a></li>
+              <li><a href="#" class="link">Blog</a></li>
+              <li><a href="#" class="link">Contact us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="hero-bannner">
+          <p>Dresses <span>&</span> Jeans</p>
+          <p>From Our famous Brands <span>Sale</span></p>
+          <a href="" class="button-buy-now">Buy Now</a>
+        </section>
+        <section class="collection">
+          <ul class="flex">
+            <li class="about-oppotunity">
+              <h3>Setting</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, illum.
+                Adipisci nihil debitis veritatis laboriosam qui. Ipsa nobis magni accusantium?
+              </p>
+            </li>
+            <li class="about-oppotunity">
+              <h3>Money Back</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, illum.
+                Adipisci nihil debitis veritatis laboriosam qui. Ipsa nobis magni accusantium?
+              </p>
+            </li>
+            <li class="about-oppotunity">
+              <h3>Worldwide Shipping</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, illum.
+                Adipisci nihil debitis veritatis laboriosam qui. Ipsa nobis magni accusantium?
+              </p>
+            </li>
+            <li class="about-oppotunity">
+              <h3>Worldwide Shipping</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, illum.
+                Adipisci nihil debitis veritatis laboriosam qui. Ipsa nobis magni accusantium?
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="collection">
+          <h2>New collection</h2>
+          <ul class="flex">
+            <li class="product">
+              <a href="#" class="product-link">
+                <img src="./images/products/prdct01.png" alt="shoes" width="255" />
+                <h3>Blue Tshirt</h3>
+                <p>$26</p>
+              </a>
+            </li>
+            <li class="product">
+              <a href="#" class="product-link">
+                <img src="./images/products/prdct02.png" alt="belt" width="255" />
+                <h3>WOMAN shirt</h3>
+                <p>$31</p>
+              </a>
+            </li>
+            <li class="product">
+              <a href="#" class="product-link">
+                <img src="./images/products/prdct03.png" alt="hat" width="255" />
+                <h3>YELLOW Tshirt</h3>
+                <p>$21</p>
+              </a>
+            </li>
+            <li class="product">
+              <a href="#" class="product-link">
+                <img src="./images/products/prdct04.png" alt="bag" width="255" />
+                <h3>Cool lingerie</h3>
+                <p>$56</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="collection">
+          <h2>Featured products</h2>
           <!-- <div class="decoration-line"></div> -->
-          <ul class="list-of-products">
+          <ul class="flex">
             <li class="product">
               <a href="#" class="product-link">
                 <img src="./images/products/prdct01.png" alt="shoes" width="255" />
@@ -101,10 +176,10 @@
             </li>
           </ul>
         </section>
-        <section class="news">
-          <h2 class="section-heading container">Lastest News</h2>
+        <section class="collection">
+          <h2>Lastest News</h2>
           <!-- <div class="decoration-line"></div> -->
-          <ul class="list-of-articles">
+          <ul class="flex">
             <li class="article">
               <img src="./images/blog/blog01.png" alt="laptop with map" width="350" />
               <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
@@ -141,7 +216,13 @@
             </li>
           </ul>
         </section>
-      </div>
-    </main>
+        <footer class="collection footer">
+          <h2>Newsletter</h2>
+          <p>Follow a collection of news & promotions</p>
+          <input type="email" placeholder="Enter your email here" name="email" />
+          <button type="submit" class="button">send</button>
+        </footer>
+      </main>
+    </div>
   </body>
 </html>
