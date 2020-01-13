@@ -20,7 +20,9 @@
               <li>
                 <a href="tel:+123-123456789" class="phone-number link">123-123456789</a>
               </li>
-              <li><a href="mailto:info@ltnt.com" class="mail link">info@ltnt.com</a></li>
+              <li>
+                <a href="mailto:info@ltnt.com" class="mail link">info@ltnt.com</a>
+              </li>
             </ul>
             <ul class="user flex">
               <li><a href="" class="link">My Account</a></li>
@@ -47,13 +49,13 @@
       </nav>
     </header>
     <main>
-      <section class="hero-bannner">
+      <section class="hero-banner">
         <p>Dresses <span>&</span> Jeans</p>
-        <p>From Our famous Brands <span>Sale</span></p>
-        <a href="" class="button-buy-now">Buy Now</a>
+        <p class="second-line">From Our famous Brands <span>Sale</span></p>
+        <a href="" class="button-hero buy-now">Buy Now</a>
       </section>
-      <section class="collection">
-        <ul class="flex">
+      <section class="collection about">
+        <ul class="flex list-about">
           <li class="about-oppotunity">
             <h3>Setting</h3>
             <p>
@@ -84,9 +86,10 @@
           </li>
         </ul>
       </section>
-      <section class="collection">
+      
+      <section class="collection new-products">
         <h2>New collection</h2>
-        <ul class="flex">
+        <ul class="flex new-product-list">
           <li class="product">
             <a href="#" class="product-link">
               <img src="./images/products/prdct01.png" alt="shoes" width="255" />
@@ -117,10 +120,10 @@
           </li>
         </ul>
       </section>
-      <section class="collection">
+      <section class="collection products">
         <h2>Featured products</h2>
         <!-- <div class="decoration-line"></div> -->
-        <ul class="flex">
+        <ul class="flex container list-products">
           <li class="product">
             <a href="#" class="product-link">
               <img src="./images/products/prdct01.png" alt="shoes" width="255" />
@@ -179,10 +182,10 @@
           </li>
         </ul>
       </section>
-      <section class="collection">
+      <section class="collection news">
         <h2>Lastest News</h2>
         <!-- <div class="decoration-line"></div> -->
-        <ul class="flex">
+        <ul class="flex container article-list">
           <li class="article">
             <img src="./images/blog/blog01.png" alt="laptop with map" width="350" />
             <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
@@ -222,8 +225,8 @@
       <footer class="collection footer">
         <h2>Newsletter</h2>
         <p>Follow a collection of news & promotions</p>
-        <input type="email" placeholder="Enter your email here" name="email" />
-        <button type="submit" class="button">send</button>
+        <input type="email" placeholder="Enter your email here" name="email" id="email" />
+        <button type="submit" class="button" >send</button>
       </footer>
     </main>
   </body>

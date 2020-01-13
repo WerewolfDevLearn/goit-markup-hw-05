@@ -4,9 +4,12 @@
   --menu-text-color: #0f0101;
   --heading-text-color: #515151;
   --product-heading-text-color: #fff;
+  --user-nav-font-color: #fefefe;
+  --hero-banner-font-color: #fffcfc;
   --signature-price-bg-color: #8c8c8c;
   --signature-name-bg-color: #323232;
   --signature-price-bg-focus-color: #7fd9c7;
+  --new-products-bg-color: #e9f0fd;
   --primary-font: 'Open Sans', sans-serif;
   --signature-font: 'Roboto', sans-serif;
 
@@ -48,8 +51,7 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
   flex-direction: column;
-  background-color: #515151;
-}
+  }
 
 .collection h2 {
   font-family: var(--signature-font);
@@ -81,12 +83,12 @@ body {
 }
 /* end of Logo */
 
+/* Footer */
 .user-nav {
   font-family: var(--primary-font);
   font-size: var(--text-size);
   font-weight: 300;
   line-height: 11px;
-  color: var(--product-heading-text-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,14 +96,30 @@ body {
   padding-bottom: 23px;
 }
 .user-nav a.link {
-  color: var(--product-heading-text-color);
+  color: var(--user-nav-font-color);
 }
+.contacts li a {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.phone-number{
+
+}
+.mail{
+
+}
+
 .user a.link {
-  padding-left: 13px;
-  padding-right: 12px;
+  padding-left: 17px;
+  padding-right: 17px;
 }
-.user a.link:last-child {
-  padding-right: 0px;
+ .user li:last-child a {
+   padding-right: 0px;
+ }
+.user a.link:hover,
+.user a.link:focus{
+  color: var(--signature-price-bg-focus-color);
 }
 
 .site-nav {
@@ -117,18 +135,24 @@ body {
   padding-top: 43px;
   padding-bottom: 30px;
 }
-.site-nav li:last-child .link {
+
+.site a.link{
+  padding-right: 17px ;
+  padding-left: 17px ;
+}
+.site li:last-child a{
   padding-right: 0px;
 }
-.site-nav a.link {
+.site a.link {
   color: var(--menu-text-color);
 }
 .link {
   display: block;
   text-decoration: none;
 }
-.link:hover,
-.link:focus {
+
+.site .link:hover,
+.site .link:focus {
   color: var(--accent-color);
 }
 .site-nav-background {
@@ -138,8 +162,84 @@ body {
   background-color: var(--accent-color);
 }
 
-/* Product */
+/* Hero-banner */
+.hero-banner {
+  height: 600px;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family:var(--primary-font);
+  font-size: var(--heading-font-size);
+  line-height: 1.5;
+  font-weight: 300 ;
+  text-transform: uppercase;
+  color: var(--hero-banner-font-color);
+  background-image:linear-gradient(
+  to bottom,
+  rgba(40,40,40,0.52),
+  rgba(40,40,40,0.52)),
+   url(../images/backgrounds/hero-bg-pic.png);
+  
+}
+.hero-banner span{
+  font-weight: 700;
+  color: var(--accent-color);
+ }
+ .second-line{
+   font-weight: 400;
+ }
+ .buy-now{
+  font-family: var(--signature-font);
+  font-size:14px;
+  font-weight: 400;
+    }
+    /* About */
+.about{
+  font-family: var(--primary-font);
+  font-size:14px;
+  background-color: var(--product-heading-text-color);
+  align-items: center;
+}
+.about h3{
+  font-size: var(--product-signature-size);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.list-about{
+  width: 1170px;
+  align-items:center;
+  justify-content: space-between;
 
+}
+.about-oppotunity{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 255px;
+
+}
+.about-oppotunity p{
+  text-align: center;
+
+}
+/* New products */
+.new-products{
+  background-color: var(--new-products-bg-color);
+  align-items: center;
+}
+
+
+/* Product */
+.products{
+  background-color: var(--hero-banner-font-color);
+  
+}
 .product {
   margin-bottom: 30px;
   margin-right: 30px;
@@ -204,6 +304,9 @@ body {
 }
 
 /* News part */
+.news{
+  background-color:var(--new-products-bg-color) ;
+}
 
 .article {
   font-family: var(--primary-font);
@@ -236,6 +339,8 @@ body {
 }
 .footer {
   background-image: url(../images/backgrounds/footer-bg.png);
+  align-items: center;
+  
 }
 
 /*Decoration*/
@@ -272,4 +377,16 @@ margin-top: 32px;
 .button:focus {
   border-color: var(--signature-price-bg-focus-color);
   background-color: var(--signature-price-bg-focus-color);
+}
+.button-hero {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--product-heading-text-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  width: 120px;
+  height: 42px;
 }
