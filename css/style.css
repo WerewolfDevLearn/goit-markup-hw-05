@@ -29,7 +29,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color:var(--new-products-bg-color);
+  background-color: var(--new-products-bg-color);
 }
 
 .flex {
@@ -51,7 +51,7 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
   flex-direction: column;
-  }
+}
 
 .collection h2 {
   font-family: var(--signature-font);
@@ -60,12 +60,33 @@ body {
   line-height: 32px;
   font-weight: 900;
   text-align: center;
-  margin-bottom: 134px;
+  margin-bottom: 80px;
+}
+.collection h2::after {
+  content: '';
+  display: block;
+  width: 164px;
+  height: 15px;
+  background-image: url(../images/icons/decoration-icons/decoration-icon-green.svg);
+  margin-top: 28px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer h2::after {
+  content: '';
+  display: block;
+  width: 164px;
+  height: 15px;
+  background-image: url(../images/icons/decoration-icons/decoration-icon-white.svg);
+  margin-top: 28px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .product {
   margin-bottom: 30px;
   margin-right: 30px;
   max-width: 255px;
+  background-color: var(--new-products-bg-color);
 }
 /* Logo */
 .logo {
@@ -102,33 +123,31 @@ body {
 .user-nav a.link {
   color: var(--user-nav-font-color);
 }
-.contacts{
-display: inline-flex;
-align-items: center;
-
+.contacts {
+  display: inline-flex;
+  align-items: center;
 }
 .contacts li a {
   display: inline-flex;
   padding-left: 7px;
   padding-right: 17px;
   align-items: center;
-
 }
 
-.phone-number::before{
+.phone-number::before {
   content: '';
-  display:inline-block;
+  display: inline-block;
   width: 17px;
   height: 19px;
   padding-left: 10px;
   background-image: url(../images/icons/header-icons/svg/phone.svg);
   background-repeat: no-repeat;
   background-size: contain;
- }
- 
-.mail::before{ 
+}
+
+.mail::before {
   content: '';
-  display:inline-block;
+  display: inline-block;
   width: 22px;
   height: 14px;
   padding-left: 10px;
@@ -141,11 +160,11 @@ align-items: center;
   padding-left: 17px;
   padding-right: 17px;
 }
- .user li:last-child a {
-   padding-right: 0px;
- }
+.user li:last-child a {
+  padding-right: 0px;
+}
 .user a.link:hover,
-.user a.link:focus{
+.user a.link:focus {
   color: var(--signature-price-bg-focus-color);
 }
 
@@ -163,11 +182,11 @@ align-items: center;
   padding-bottom: 30px;
 }
 
-.site a.link{
-  padding-right: 17px ;
-  padding-left: 17px ;
+.site a.link {
+  padding-right: 17px;
+  padding-left: 17px;
 }
-.site li:last-child a{
+.site li:last-child a {
   padding-right: 0px;
 }
 .site a.link {
@@ -199,73 +218,107 @@ align-items: center;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family:var(--primary-font);
+  font-family: var(--primary-font);
   font-size: var(--heading-font-size);
   line-height: 1.5;
-  font-weight: 300 ;
+  font-weight: 300;
   text-transform: uppercase;
   color: var(--hero-banner-font-color);
-  background-image:linear-gradient(
-  to bottom,
-  rgba(40,40,40,0.52),
-  rgba(40,40,40,0.52)),
-   url(../images/backgrounds/hero-bg-pic.png);
-  
+  background-image: linear-gradient(to bottom, rgba(40, 40, 40, 0.52), rgba(40, 40, 40, 0.52)),
+    url(../images/backgrounds/hero-bg-pic.png);
 }
-.hero-banner span{
+.hero-banner span {
   font-weight: 700;
   color: var(--accent-color);
- }
- .second-line{
-   font-weight: 400;
- }
- .buy-now{
-  font-family: var(--signature-font);
-  font-size:14px;
+}
+.second-line {
   font-weight: 400;
-    }
-    /* About */
-.about{
+}
+.buy-now {
+  font-family: var(--signature-font);
+  font-size: 14px;
+  font-weight: 400;
+}
+/* About */
+.about {
   font-family: var(--primary-font);
-  font-size:14px;
+  font-size: 14px;
   background-color: var(--product-heading-text-color);
   align-items: center;
 }
-.about h3{
+.about h3 {
   font-size: var(--product-signature-size);
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 30px;
 }
-.list-about{
+.list-about {
   width: 1170px;
-  align-items:center;
+  align-items: center;
   justify-content: space-between;
-
 }
-.about-oppotunity{
+.about-oppotunity {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   max-width: 255px;
-
 }
-.about-oppotunity p{
+.about-oppotunity p {
   text-align: center;
-
+}
+.setting::before {
+  content: '';
+  display: flex;
+  width: 65px;
+  height: 65px;
+  background: url(../images/icons/about-icons/icon01.svg);
+  background-repeat: no-repeat;
+  margin: auto;
+  padding-bottom: 52px;
+}
+.money-back::before {
+  content: '';
+  display: flex;
+  flex-direction: column;
+  width: 65px;
+  height: 65px;
+  background: url(../images/icons/about-icons/icon02.svg);
+  background-repeat: no-repeat;
+  margin: auto;
+  padding-bottom: 52px;
+}
+.ww-shipping::before {
+  content: '';
+  display: flex;
+  flex-direction: column;
+  width: 65px;
+  height: 65px;
+  background: url(../images/icons/about-icons/icon03.svg);
+  background-repeat: no-repeat;
+  margin: auto;
+  padding-bottom: 52px;
+}
+.shipping-direction::before {
+  content: '';
+  display: flex;
+  flex-direction: column;
+  width: 65px;
+  height: 65px;
+  background: url(../images/icons/about-icons/icon04.svg);
+  background-repeat: no-repeat;
+  margin: auto;
+  padding-bottom: 52px;
 }
 /* New products */
-.new-products{
+.new-products {
   background-color: var(--new-products-bg-color);
   align-items: center;
 }
 
-
 /* Product */
-.products{
+.products {
   background-color: var(--hero-banner-font-color);
-  
 }
 
 .collection .product:nth-child(4n) {
@@ -328,8 +381,8 @@ align-items: center;
 }
 
 /* News part */
-.news{
-  background-color:var(--new-products-bg-color) ;
+.news {
+  background-color: var(--new-products-bg-color);
 }
 
 .article {
@@ -351,20 +404,19 @@ align-items: center;
   font-size: var(--blog-signature-font-size);
   font-weight: 600;
   line-height: 26px;
-  
+
   margin-bottom: 47px;
 }
 
 .article p {
   font-size: var(--text-size);
   line-height: 26px;
-  
+
   margin-bottom: 16px;
 }
 .footer {
   background-image: url(../images/backgrounds/footer-bg.png);
   align-items: center;
-  
 }
 
 /*Decoration*/
