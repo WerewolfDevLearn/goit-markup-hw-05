@@ -29,7 +29,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: chocolate;
+  background-color:var(--new-products-bg-color);
 }
 
 .flex {
@@ -62,7 +62,11 @@ body {
   text-align: center;
   margin-bottom: 134px;
 }
-
+.product {
+  margin-bottom: 30px;
+  margin-right: 30px;
+  max-width: 255px;
+}
 /* Logo */
 .logo {
   display: block;
@@ -98,16 +102,39 @@ body {
 .user-nav a.link {
   color: var(--user-nav-font-color);
 }
+.contacts{
+display: inline-flex;
+align-items: center;
+
+}
 .contacts li a {
-  padding-left: 17px;
+  display: inline-flex;
+  padding-left: 7px;
   padding-right: 17px;
-}
-
-.phone-number{
+  align-items: center;
 
 }
-.mail{
 
+.phone-number::before{
+  content: '';
+  display:inline-block;
+  width: 17px;
+  height: 19px;
+  padding-left: 10px;
+  background-image: url(../images/icons/header-icons/svg/phone.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+ }
+ 
+.mail::before{ 
+  content: '';
+  display:inline-block;
+  width: 22px;
+  height: 14px;
+  padding-left: 10px;
+  background-image: url(../images/icons/header-icons/svg/email.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .user a.link {
@@ -240,10 +267,7 @@ body {
   background-color: var(--hero-banner-font-color);
   
 }
-.product {
-  margin-bottom: 30px;
-  margin-right: 30px;
-}
+
 .collection .product:nth-child(4n) {
   margin-right: 0px;
 }
@@ -327,14 +351,14 @@ body {
   font-size: var(--blog-signature-font-size);
   font-weight: 600;
   line-height: 26px;
-  /* max-width: 350px; */
+  
   margin-bottom: 47px;
 }
 
 .article p {
   font-size: var(--text-size);
   line-height: 26px;
-  /* max-width: 350px; */
+  
   margin-bottom: 16px;
 }
 .footer {
