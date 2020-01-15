@@ -25,13 +25,18 @@ html {
   box-sizing: border-box;
 }
 
+
 * {
   box-sizing: inherit;
 }
 body {
   background-color: var(--new-products-bg-color);
 }
-
+img {
+  display:block;
+  max-width: 100%;
+  height: auto;
+}
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -256,6 +261,7 @@ body {
   width: 1170px;
   align-items: center;
   justify-content: space-between;
+  padding-top:63px;
 }
 .about-oppotunity {
   display: flex;
@@ -267,49 +273,44 @@ body {
 .about-oppotunity p {
   text-align: center;
 }
-.setting::before {
+
+.setting,
+.money-back,
+.ww-shipping,
+.shipping-direction{
+  position: relative;
+  padding-top: 55px;
+}
+.list-about h3::before{ 
   content: '';
-  display: flex;
+  position: absolute;
+  display: block;
   width: 65px;
   height: 65px;
+  top:-65px;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+
+.setting::before {
   background: url(../images/icons/about-icons/icon01.svg);
   background-repeat: no-repeat;
-  margin: auto;
-  padding-bottom: 52px;
-}
+ }
 .money-back::before {
-  content: '';
-  display: flex;
-  flex-direction: column;
-  width: 65px;
-  height: 65px;
   background: url(../images/icons/about-icons/icon02.svg);
   background-repeat: no-repeat;
-  margin: auto;
-  padding-bottom: 52px;
-}
+ }
 .ww-shipping::before {
-  content: '';
-  display: flex;
-  flex-direction: column;
-  width: 65px;
-  height: 65px;
-  background: url(../images/icons/about-icons/icon03.svg);
-  background-repeat: no-repeat;
-  margin: auto;
-  padding-bottom: 52px;
+   background: url(../images/icons/about-icons/icon03.svg);
+   background-repeat: no-repeat;
 }
 .shipping-direction::before {
-  content: '';
-  display: flex;
-  flex-direction: column;
-  width: 65px;
-  height: 65px;
+  
   background: url(../images/icons/about-icons/icon04.svg);
   background-repeat: no-repeat;
-  margin: auto;
-  padding-bottom: 52px;
-}
+ }
+
 /* New products */
 .new-products {
   background-color: var(--new-products-bg-color);
@@ -419,23 +420,6 @@ body {
   align-items: center;
 }
 
-/*Decoration*/
-/* .decoration-line{
-width: 165px;
-height: 8px;
-background-color: var(--accent-color);
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 92px;
-margin-top: 32px;
-} */
-
-/* .article-decoration-line{
-  width: 135px;
-  height: 3px;
-  background-color: var(--accent-color);
-  margin-bottom: 30px;
-  } */
 
 .button {
   display: inline-flex;
