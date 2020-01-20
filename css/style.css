@@ -85,7 +85,7 @@ img {
 .footer h2::after {
   background-image: url(../images/icons/decoration-icons/decoration-icon-white.svg);
 }
-.
+
 
 /* Logo */
 .logo {
@@ -525,8 +525,12 @@ img {
   margin-bottom: 47px;
 }
 .article h3::after{
+  display: block;
   content: '';
-  
+  width: 136px;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin-top: 12px;
 }
 .article p {
   font-size: var(--text-size);
@@ -538,6 +542,49 @@ img {
   background-image: url(../images/backgrounds/footer-bg_mask.svg);
   align-items: center;
 }
+/* Footer */
+.footer p{
+  font-family: var(--primary-font);
+  font-size: 16px;
+  line-height : 26px;
+  font-weight: 300;
+  color: var(--product-heading-text-color);
+  margin-bottom: 42px;
+}
+.form-for-email{
+  display: inline-flex;
+  align-items: center;
+
+}
+.your-email{
+  height:60px;
+  width:450px;
+  border: 1px solid var(--product-heading-text-color);
+  border-radius: 5px 0 0 5px;
+  padding-left: 28px;
+  
+}
+.email-button{
+  height: 60px;
+  width: 90px;
+  border: 1px solid var(--product-heading-text-color);
+  border-radius: 0 5px 5px 0;
+  background-color: var(--accent-color);
+  padding-left: 25px;
+}
+.email-button::before{
+  box-sizing: border-box;
+  display:flex;
+  content: '';
+  height: 26px;
+  width: 47px;
+  background-image: url(../images/icons/interactiv-icons/submit.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+}
+
 
 .button {
   display: inline-flex;
@@ -567,4 +614,9 @@ img {
   background-color: var(--accent-color);
   width: 120px;
   height: 42px;
+}
+.button-hero:hover,
+.button-hero:focus {
+  border-color: var(--signature-price-bg-focus-color);
+  background-color: var(--signature-price-bg-focus-color);
 }
