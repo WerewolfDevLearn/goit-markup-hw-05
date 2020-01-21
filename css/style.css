@@ -11,8 +11,8 @@
   --signature-price-bg-focus-color: #7fd9c7;
   --new-products-bg-color: #e9f0fd;
 
-  --primary-font: "Open Sans", sans-serif;
-  --signature-font: "Roboto", sans-serif;
+  --primary-font: 'Open Sans', sans-serif;
+  --signature-font: 'Roboto', sans-serif;
 
   --text-size: 14px;
   --button-text-size: 16px;
@@ -67,7 +67,7 @@ img {
 
 .collection h2::after,
 .footer h2::after {
-  content: "";
+  content: '';
   display: block;
   width: 164px;
   height: 15px;
@@ -134,7 +134,7 @@ img {
   padding-right: 17px;
 }
 .phone-number::before {
-  content: "";
+  content: '';
   display: block;
   width: 17px;
   height: 19px;
@@ -145,7 +145,7 @@ img {
 }
 
 .mail::before {
-  content: "";
+  content: '';
   display: block;
   width: 22px;
   height: 14px;
@@ -223,17 +223,16 @@ img {
   font-weight: 300;
   text-transform: uppercase;
   color: var(--hero-banner-font-color);
-  background-image: linear-gradient(
-      to bottom,
-      rgba(40, 40, 40, 0.52),
-      rgba(40, 40, 40, 0.52)
-    ),
+  background-image: linear-gradient(to bottom, rgba(40, 40, 40, 0.52), rgba(40, 40, 40, 0.52)),
     url(../images/backgrounds/hero-bg-pic.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: inherit;
 }
-.hero-banner span {
+h1 {
+  text-align: center;
+}
+.first-line {
   font-weight: 700;
   color: var(--accent-color);
 }
@@ -284,7 +283,7 @@ img {
 .shipping-direction {
 }
 .list-about li::before {
-  content: "";
+  content: '';
   display: block;
   width: 65px;
   height: 65px;
@@ -422,7 +421,7 @@ img {
 .interactive button::before {
   box-sizing: border-box;
   display: inline-flex;
-  content: "";
+  content: '';
   width: 32px;
   height: 32px;
   background-repeat: no-repeat;
@@ -467,7 +466,7 @@ img {
 
 .img-container::before {
   display: block;
-  content: "";
+  content: '';
   position: absolute;
   left: 100%;
   width: 100%;
@@ -515,7 +514,7 @@ img {
 }
 .article h3::after {
   display: block;
-  content: "";
+  content: '';
   width: 136px;
   height: 3px;
   background-color: var(--accent-color);
@@ -561,7 +560,7 @@ img {
 }
 .email-button::before {
   display: flex;
-  content: "";
+  content: '';
   height: 26px;
   width: 47px;
   background-image: url(../images/icons/interactiv-icons/submit.svg);
